@@ -5,6 +5,11 @@ O projeto reúne conteúdos interativos, indicações de filmes, jogos de puzzle
 
 ---
 
+Observação: A lógica original do jogo "Enigma do Lenny" está na no arquivo "f8a91c7b2_logic.js" .
+A versão usada no site está ofuscada para evitar spoilers dos enigmas.
+
+---
+
 ## 📚 Sobre o projeto
 
 O **Universo dos Enigmas** foi criado com o objetivo de reunir conteúdos que desafiam a mente e estimulam o pensamento lógico.
