@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>enigmadolenny</title>
+  </head>
+  <body data-fase="continuar">
+    <header>
+      <div class="header_box">
+        <a href="/index.html">
+          <img class="header_logo" src="assets/img/logo1.png" />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/enigmas.html">Enigmas</a></li>
+            <li><a href="/livro.html">Livro</a></li>
+            <li><a href="/indicacoes.html">Indicações</a></li>
+           
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page_main">
+      <h1 class="title">Regras</h1>
+
+      <ul class="rules">
+        <li class="rules_list">Coloque as respostas em letras minúsculas.</li>
+        <li class="rules_list">Nada de pedir dicas extras.</li>
+        <li class="rules_list">
+          Anote todas as respostas e as frases reveladas num caderno (no livro,
+          essa é a regra número 06).
+        </li>
+        <li class="rules_list">Coloque seu cérebro para trabalhar, pense!</li>
+      </ul>
+
+      <h2 class="title">Oi Lenny</h2>
+
+      <div class="start">
+        <a href="letter.html" class="btn_start">Começar</a>
+      </div>
+
+      <div class="start">
+        <button class="btn_start btn_continue" id="btn_continue">Continuar</button>
+      </div>
+<div class="enigma_area continue_game input_hidden" id="area_continue">
+  <p class="enigma_text" id="alerta" >Coloque sua última resposta:</p>
+
+      <input
+        autocomplete="off"
+        spellcheck="false"
+        type="text"
+        class="enigma_input"
+        placeholder="digite aqui..."
+        id="resposta"
+      />
+
+      <button class="btn_send" id="btn_send">Enviar resposta</button>
+</div>
+      
+
+      
+    </main>
+    <footer></footer>
+    <script src="script_riddle.js"></script>
+  </body>
+</html>

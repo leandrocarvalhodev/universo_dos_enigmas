@@ -1,0 +1,142 @@
+/* SEÇÃO FILMES */
+.bodyBase_indicacoes {
+  background-color: var(--cor-hardPurple);
+}
+
+.filmes-container {
+  width: 90vw;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0px auto 80px;
+  gap: 40px;
+}
+
+.filmes {
+  width: 200px;
+  height: 250px;
+
+  margin: 2%;
+
+  color: var(--cor-softWithe);
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.filmes img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 5px 5px 10px var(--cor-shadowblack);
+  border-radius: 16px;
+}
+
+.filmes a {
+  color: var(--cor-softWithe);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.filmes a:hover {
+  font-size: 18px;
+  color: var(--cor-vibrantBlue);
+}
+
+/* SEÇÃO JOGOS */
+
+.jogos-container {
+  width: 1180px;
+  height: auto;
+  display: grid;
+  grid-template-areas:
+    "witness gorogoa"
+    "room braid";
+  margin: 20px auto 80px;
+  gap: 30px;
+}
+
+.jogo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr;
+
+  grid-template-rows: 1fr auto auto auto;
+
+  background-color: var(--cor-lightPurple);
+  padding: 5px;
+
+  color: var(--cor-darkPurple);
+  border-radius: 16px;
+  box-shadow: 5px 5px 10px var(--cor-shadowblack);
+}
+
+.jogo__imagem {
+  grid-area: 1/1/2/4;
+  justify-self: stretch;
+  border-radius: 16px;
+}
+
+.jogo__titulo {
+  grid-area: 2/1/3/3;
+  padding: 10px;
+}
+
+.jogo__texto {
+  grid-area: 3/1/5/3;
+  align-self: center;
+  padding: 10px;
+}
+
+.steam {
+  grid-area: 3/3/4/4;
+  justify-self: end;
+}
+
+.epicgames {
+  grid-area: 4/3/5/4;
+  justify-self: end;
+}
+
+.steam:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.epicgames:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.lista-de-sites {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  justify-content: space-evenly;
+  color: var(--cor-softWithe);
+  margin: 20px auto 80px;
+  gap: 20px;
+}
+
+.site-de-enigma a {
+  color: var(--cor-softWithe);
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.site-de-enigma a:hover {
+  color: var(--cor-vibrantBlue);
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+  .jogos-container {
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 20px auto;
+    gap: 30px;
+  }
+}
